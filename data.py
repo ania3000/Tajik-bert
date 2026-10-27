@@ -19,7 +19,6 @@ def prepare_datasets(dataset_name, dataset_config_name, tokenizer, sub_train=0, 
     tokenized_datasets = datasets.map(
         tokenize_function,
         batched=True,
-        num_proc=4,
         desc="Running tokenizer on dataset",
     )
 
