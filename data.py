@@ -73,7 +73,7 @@ def prepare_datasets(dataset_name, dataset_config_name, tokenizer, sub_train=0, 
         return result
 
     lm_datasets = tokenized_datasets.map(
-        group_texts,
+        group_sentences,
         batched=True,
         batch_size=1000,
         num_proc=4,
