@@ -6,10 +6,6 @@ pip install -r requirements.txt
 ```
 To train with multilingual embeddings:
 ```bash
-./multiling-emb.sh
-```
-or:
-```bash
 python train.py \
     --output_dir "./your-path" \
     --hf_token "your_hf_token" \
