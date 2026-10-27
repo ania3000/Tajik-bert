@@ -79,7 +79,7 @@ def main():
     trainer.save_model(args.output_dir)
     tokenizer.save_pretrained(args.output_dir)
 
-    print("Pushing model and tokenizer to HFace...")
+    print("Pushing model and tokenizer to HF...")
     trainer.push_to_hub()
     print("Done!")
 
