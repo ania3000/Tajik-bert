@@ -11,7 +11,7 @@ To train with multilingual embeddings:
 or:
 ```bash
 python train.py \
-    --output_dir "./your-name" \
+    --output_dir "./your-path" \
     --hf_token "your_hf_token" \
     --model_name "bert-base-multilingual-cased" \
     --tokenizer_name "ania3000/tjbert-demo" \
