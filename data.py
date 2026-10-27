@@ -74,8 +74,6 @@ def prepare_datasets(dataset_name, tokenizer, sub_train=0, sub_test=0, block_siz
     lm_datasets = tokenized_datasets.map(
         group_sentences,
         batched=True,
-        batch_size=1000,
-        num_proc=4,
         desc=f"Grouping texts in chunks of {block_size}",
     )
 
