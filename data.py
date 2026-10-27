@@ -1,9 +1,6 @@
 from datasets import load_dataset, Dataset, DatasetDict
 
-def prepare_datasets(dataset_name, dataset_config_name, tokenizer, sub_train=0, sub_test=0, block_size=128, token=None):
-    if dataset_config_name:
-        datasets = load_dataset(dataset_name, dataset_config_name, token=token)
-    else:
+def prepare_datasets(dataset_name, tokenizer, sub_train=0, sub_test=0, block_size=128, token=None):
         datasets = load_dataset(dataset_name, token=token)
 
     train = datasets["train"]
