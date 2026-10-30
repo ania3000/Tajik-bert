@@ -9,7 +9,7 @@ To train with multilingual embeddings:
 python train.py \
     --output_dir "/your-path" \
     --hf_token "your_hf_token" \
-    --model_name "bert-base-multilingual-cased" \
+    --model_name "google-bert/bert-base-multilingual-cased" \
     --tokenizer_name "ania3000/tjbert-demo" \
     --dataset_name "ossetic-encoders/nctl-unlab" \
     --hub_model_id "your-username/model-name" \
