@@ -4,13 +4,13 @@ git clone https://github.com/ania3000/Tajik-bert.git
 %cd Tajik-bert
 pip install -r requirements.txt
 ```
-To train with multilingual embeddings:
+To train with **multilingual** embeddings:
 ```bash
 python train.py \
     --output_dir "/your-path" \
     --hf_token "your_hf_token" \
     --model_name "google-bert/bert-base-multilingual-cased" \
-    --tokenizer_name "ania3000/tjbert-demo" \
+    --tokenizer_name "ania3000/tjbert-tokenizer" \
     --dataset_name "ossetic-encoders/nctl-unlab" \
     --hub_model_id "your-username/model-name" \
     --learning_rate 5e-5 \
